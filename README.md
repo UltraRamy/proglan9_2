@@ -12,3 +12,7 @@ The spike happened because there were no messages before, then we sent messages 
 
 ![alt text](image-3.png)
 My total queue was 1 because a message was briefly queued before being consumed, and thread::sleep(ten_millis) slowed publishing, creating a gradual curve at message rates graph.
+
+![alt text](image-4.png)
+![alt text](image-5.png)
+The spike died faster because we have 2 consoles to process the messages concurrently.
