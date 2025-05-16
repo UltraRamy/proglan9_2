@@ -10,3 +10,5 @@ This screenshot shows a Publisher-Subscriber pattern in Rust to send and process
 ![alt text](image-2.png)
 The spike happened because there were no messages before, then we sent messages by running publisher.
 
+![alt text](image-3.png)
+My total queue was 1 because a message was briefly queued before being consumed, and thread::sleep(ten_millis) slowed publishing, creating a gradual curve at message rates graph.
